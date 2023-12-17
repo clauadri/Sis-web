@@ -1,0 +1,25 @@
+.about__data {
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.about__data::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.95rem;
+    top: 20%;
+}
+
+.about__description {
+    margin-bottom: 1rem;
+}

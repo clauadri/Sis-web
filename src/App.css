@@ -1,0 +1,8 @@
+.main {
+    margin-left: 110px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(238, 238, 208, 0.5),
+        rgba(218, 218, 247, 0.5)
+      ), url("/src/assets/Middle_01.jpg.webp");;
+}
