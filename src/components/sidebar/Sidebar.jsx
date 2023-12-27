@@ -1,4 +1,3 @@
-import React from "react";
 import "./Sidebar.css";
 import Logo from "../../assets/logo.svg";
 import { FcHome, FcAbout, FcDocument, FcIdea } from "react-icons/fc";
@@ -7,7 +6,7 @@ const Sidebar = () => {
   return (
     <aside className="aside">
       <a href="#home" className="nav__logo">
-        <img src={Logo} alt="" />
+        {/* <img src={Logo} alt="" /> */}
       </a>
       <nav className="nav">
         <div className="nav__menu">

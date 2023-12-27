@@ -1,14 +1,16 @@
 import React from "react";
 import {} from "react-icons/fc";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 const Services = () => {
+  const [t] = useTranslation();
   return (
     <section className="career container section" id="career">
-      <h2 className="section__title">Servicios Ofrecidos</h2>
+      <h2 className="section__title">{t("services")}</h2>
       <div className="about__container grid">
         <div className="about__data grid">
           <p className="margin_all">
-            Traducción del inglés al español (o a la inversa).{" "}
+            {t("tri")}
             <p className="fi fi-es"></p>
             <FaArrowLeft />
             <FaArrowRight />
@@ -17,7 +19,7 @@ const Services = () => {
         </div>
         <div className="about__data grid">
           <p className="margin_all">
-            Traducción del francés al español (o a la inversa).{" "}
+            {t("trf")}
             <p className="fi fi-fr"></p>
             <FaArrowLeft />
             <FaArrowRight />
@@ -26,7 +28,7 @@ const Services = () => {
         </div>
         <div className="about__data grid">
           <p className="margin_all">
-            Traducción del rumano al español (o a la inversa).
+            {t("trr")}
             <p className="fi fi-ro"></p>
             <FaArrowLeft />
             <FaArrowRight />
@@ -34,12 +36,7 @@ const Services = () => {
           </p>
         </div>
         <div className="about__data grid">
-          <p className="margin_all">
-            Traducción y corrección de textos de tema jurídico y económico
-            (actas de nacimiento, actas de defunción, patentes y marcas,
-            capitulaciones matrimoniales, cuentas anuales, informes de gestión,
-            informes de rating, letras de cambio, etc.)
-          </p>
+          <p className="margin_all">{t("tra")}</p>
         </div>
       </div>
     </section>

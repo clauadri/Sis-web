@@ -73,3 +73,7 @@
     transform: translateX(-50%);
     animation: ani-mouse 2s linear infinite;
 }
+.but{
+    margin: 5px;
+    background-color: transparent;
+}
